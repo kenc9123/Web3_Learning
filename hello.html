@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- head里的内容是给浏览器看的配置信息，不显示在网页上，title会显示在标签页上 -->
+        <title>First Web Page</title>
+        <style>
+            h1{
+                color:rgb(255, 255, 255);
+            }
+            h2{
+                color:cyan
+            }
+            body{
+                background-color: rgb(29, 29, 29);
+                color: white;
+            }
+            header{
+                background-color: rgb(29, 29, 29);
+                padding: 20px;
+                text-align: center;
+            }
+            nav a{
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+                margin-right: 15px;
+            }
+            main{
+                padding: 20px;
+                text-align: center;
+                gap: 5px;
+                display: flex;
+            }
+            #left {
+                flex: 1;
+                background-color: rgb(50, 50, 50);
+                text-align: left;
+                padding: 20px;
+                margin: 10px;
+                border: 4px solid rgb(87, 87, 87);
+                border-radius: 30px;      
+            }
+            #right {
+                flex: 1;
+                background-color: rgb(50, 50, 50);
+                text-align: left;
+                padding: 10px;
+                margin: 10px;
+                border: 4px solid rgb(87, 87, 87);
+                border-radius: 30px;      
+            }
+            img{
+                width: 20px;
+                height: 20px;
+            }
+            ol{
+                text-align: left;
+                display: inline-block;
+                color:rgb(0, 255, 255)
+            }
+            ul{
+                text-align: left;
+                display: inline-block;
+                color:rgb(255, 255, 255)
+            }
+            input{
+                width: 300px;
+                padding: 7px;
+                margin: 5px 0;
+                box-sizing: border-box;
+                border: 2px solid rgb(87, 87, 87);
+                border-radius: 20px;
+            }
+            select{
+                padding: 2px;
+                margin: 5px 0;
+                box-sizing: border-box;
+                border: 2px solid rgb(87, 87, 87);
+                border-radius: 20px;
+            }
+            button{
+                background-color: rgb(58, 193, 255);
+                color: black;
+                border: 2px black;
+                border-radius: 10px;
+            }
+            footer{
+                background-color: rgb(29, 29, 29);
+                padding: 20px;
+                text-align: center;
+            }
+        </style>  
+    </head>
+
+    <body>
+    <!-- div是容器，main是页面的主要内容，header是页面的头部，footer是页面的底部，nav是页面的导航，section是页面的章节，和div效果一致 -->
+    <header>
+        <h1>My Web3 Dashboard</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#purse">Purse</a>
+            <a href="#purchase">Purchase</a>
+        </nav>
+    </header>
+        
+  <main>
+    <section id="left">
+        <h2>About Ethereum</h2>
+        <p>Ethereum is a decentralized, open-source blockchain system that features smart contract functionality. It is the second-largest cryptocurrency platform by market capitalization, after Bitcoin.</p>
+        <!-- img src是图片地址，加载不出来时会显示alt后的文字 -->
+        <img src="https://cdn.crypto-logo.com/logos/ethereum-eth/128x128/transparent.png" alt="Ethereum Logo">
+        <!-- a href是打开链接，target="_blank"是在新标签页打开 -->
+        <a href="https://ethereum.org" target="_blank">Press me to the Ethereum Website</a>
+    </section>
+
+    <section id="right">
+        <!-- 有序排列，数字序号1. 2. -->
+        <ol>
+            <li>Transfer Funds</li>
+        </ol>
+        
+        <form>
+            <!-- 无序排列，bullet点· -->
+            <ul>
+            <li>Purse Address</li>
+            <input type="text" placeholder="Enter your purse address">
+
+            <li>Transfer Amount</li>
+            <input type="number" placeholder="Enter the amount to transfer">
+
+            <li>Select Network</li>
+            <select>
+                <option value="ethereum">Ethereum</option>
+                <option value="polygon">Polygon</option>
+                <option value="bsc">Arbitrum</option>
+            </select>
+
+            <br><br>
+
+            <button type="submit">Submit</button>
+            </ul>
+        </form>
+    </section>
+  </main>
+    
+  <footer>
+        <br><br><br>
+        <h5>&copy; 2026 My Web3 Dashboard. All rights reserved.</h5>
+  </footer>
+        </body>
+</html>
