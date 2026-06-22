@@ -1,4 +1,4 @@
-import { useState } from "react";
+import TransferCard from "./TransferCard";
 
 function Header() {
   return (
@@ -9,45 +9,13 @@ function Header() {
   );
 }
 
-function TransferCard() {
-  const [balance, setBalance] = useState(500);
-  const [address, setAddress] = useState("");
-  const [result, setResult] = useState("");
-  const [amount, setAmount] = useState(0);
-
-  function handleSubmit() {
-    if (amount > balance) {
-      setResult("Insufficient balance");
-    } else {
-      setBalance(balance - amount);
-      setResult("Transfer Completed! Remaining balance:" + (balance - amount) + " ETH");
-    }
-  }
-
-  return (
-    <div>
-      <h2>Transfer Funds</h2>
-      <input
-       type="text"
-       placeholder="Wallet Address"
-       onChange={(e) => setAddress(e.target.value)}
-       />
-      <input
-       type="number"
-       placeholder="Transfer Amount"
-       onChange={(e) => setAmount(Number(e.target.value))}
-       />
-      <button onClick={handleSubmit}>Submit</button>
-      <p>{result}</p>
-    </div>
-  );
-}
-
 function App() {
   return (
     <div>
       <Header />
-      <TransferCard />
+      <TransferCard title="ETH Transfer" initialBalance={500} />
+      <br></br>
+      <TransferCard title="POL Transfer" initialBalance={100} />
     </div>
   );
 }
