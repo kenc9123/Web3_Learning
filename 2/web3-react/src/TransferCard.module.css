@@ -1,0 +1,36 @@
+.head {
+    font-size: 3rem;
+    color: #7d2727
+}
+
+.card {
+    text-align: center;
+    max-width: 1000px;
+    background-color: #1a1a2e;
+    border: 1px solid #627eea;
+    border-radius:20px;
+    padding: 20px;
+    margin: 10px auto;
+}
+
+.title {
+    color: #627eea;
+    font-size: 1.5rem;
+}
+
+.input {
+    display: block;
+    width: 95%;
+    padding: 8px;
+    margin: 8px auto;
+    border-radius: 15px;
+}
+
+.button {
+    background-color: #627eea;
+    color: white;
+    padding: 10px 15px;
+    border-radius:20px;
+    border: none;
+    cursor: pointer;
+}

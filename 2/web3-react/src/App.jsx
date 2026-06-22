@@ -1,9 +1,10 @@
 import TransferCard from "./TransferCard";
+import styles from "./TransferCard.module.css";
 
 function Header() {
   return (
     <header>
-      <h1>My Web3 Dashboard</h1>
+      <h1 className={styles.head}>My Web3 Dashboard</h1>
       <p>Welcome to my Web3 dashboard page</p>
     </header>
   );
