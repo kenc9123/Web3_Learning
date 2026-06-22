@@ -5,8 +5,11 @@
 
 ## 学习路线
 > 第一阶段：HTML + CSS + JavaScript 基础
+
 > 第二阶段：React 框架 + Web3 连接
+
 > 第三阶段：Solidity 智能合约
+
 > 第四阶段：项目实战
 
 ## 已完成内容

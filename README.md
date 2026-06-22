@@ -5,8 +5,11 @@ Record the process of learning Web3 front-end development from scratch, includin
 
 ## Learning Route
 > Phase 1: HTML + CSS + JavaScript basics
+
 > Phase 2: React Framework + Web3 Connection
+
 > Phase 3: Solidity Smart Contract
+
 > Phase 4: Real Project
 
 ## Completed Contents
