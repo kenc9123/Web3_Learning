@@ -1,9 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <!-- 这两行meta代码是标准写法，charset="UTF-8"为字符编码，防止中文乱码，viewport为了在手机上正常显示 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- head里的内容是给浏览器看的配置信息，不显示在网页上，title会显示在标签页上 -->
     <title>First Web Page</title>
+
+    <!-- CSS -->
     <style>
         h1 {
             color: rgb(255, 255, 255);
@@ -139,7 +145,7 @@
                     <input type="number" id="transferamount" placeholder="Enter the amount to transfer">
 
                     <li>Select Network</li>
-                    <select>
+                    <select title="Select Network">
                         <option value="ethereum" id="ETH">Ethereum</option>
                         <option value="polygon" id="POL">Polygon</option>
                         <option value="bsc" id="ARB">Arbitrum</option>
@@ -160,7 +166,8 @@
             <!-- img src是图片地址，加载不出来时会显示alt后的文字 -->
             <img src="https://cdn.crypto-logo.com/logos/ethereum-eth/128x128/transparent.png" alt="Ethereum Logo">
             <!-- a href是打开链接，target="_blank"是在新标签页打开 -->
-            <a href="https://ethereum.org" target="_blank">Press me to the Ethereum Website</a>
+            <a href="https://ethereum.org" target="_blank" rel="noopener" noreferrer>Press me to the Ethereum
+                Website</a>
             <ul id="transactionlist"></ul>
         </section>
     </main>

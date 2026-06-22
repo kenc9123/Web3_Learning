@@ -1,4 +1,4 @@
-## Web3 learning Log ##
+## Web3 Learning Log ##
 
 # About this git
 Record the process of learning Web3 front-end development from scratch, including code exercises and study notes
