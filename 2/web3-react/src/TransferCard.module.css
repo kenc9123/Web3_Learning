@@ -1,15 +1,15 @@
 .head {
     font-size: 3rem;
-    color: #7d2727
+    color: #d05f5f
 }
 
 .card {
     text-align: center;
-    max-width: 1000px;
     background-color: #1a1a2e;
     border: 1px solid #627eea;
-    border-radius:20px;
-    padding: 20px;
+    border-radius: 20px;
+    width: 500px;
+    padding: 100px;
     margin: 10px auto;
 }
 
@@ -30,7 +30,20 @@
     background-color: #627eea;
     color: white;
     padding: 10px 15px;
-    border-radius:20px;
+    border-radius: 20px;
     border: none;
     cursor: pointer;
+}
+
+.walletinfo {
+    text-align: center;
+    background-color: #1a1a2e;
+    border: 1px solid #627eea;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px auto;
+}
+
+.font {
+    color: #627eea
 }

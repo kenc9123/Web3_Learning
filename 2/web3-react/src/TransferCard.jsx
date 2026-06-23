@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import styles from "./TransferCard.module.css";
 
-function TransferCard({ title, initialBalance }) {
-  const [balance, setBalance] = useState(initialBalance);
+// ({})中是子组件，通过这样写像父组件传数据
+function TransferCard({ title, balance, unit, setBalance, onTransfer }) {
   const [address, setAddress] = useState("");
   const [result, setResult] = useState("");
   const [amount, setAmount] = useState(0);
@@ -12,6 +12,7 @@ function TransferCard({ title, initialBalance }) {
       setResult("Insufficient Balance");
     } else {
       setBalance(balance - amount);
+      onTransfer("Transfer" + amount + " " + unit + " to " + address);
     }
   }
 
@@ -22,7 +23,7 @@ function TransferCard({ title, initialBalance }) {
   return (
     <div className={styles.card}>
       <h2 className={styles.title}>{title}</h2>
-      <p>Current Balance:{balance} ETH</p>
+      <p>Current Balance:{balance} {unit}</p>
       <input
         className={styles.input}
         type="text"
