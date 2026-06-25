@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import styles from "./TransferCard.module.css";
 
 // ({})中是子组件，通过这样写像父组件传数据
-function TransferCard({ title, balance, unit, setBalance, onTransfer }) {
+function TransferCard({ title, balance, unit, setBalance, onTransfer, Logo, sim }) {
   const [address, setAddress] = useState("");
   const [result, setResult] = useState("");
   const [amount, setAmount] = useState(0);
@@ -22,6 +22,7 @@ function TransferCard({ title, balance, unit, setBalance, onTransfer }) {
 
   return (
     <div className={styles.card}>
+      <img className={styles.logo} src={Logo} alt={sim}></img>
       <h2 className={styles.title}>{title}</h2>
       <p>Current Balance:{balance} {unit}</p>
       <input

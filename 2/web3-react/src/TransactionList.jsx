@@ -4,7 +4,7 @@ import styles from "./TransferCard.module.css"
 function TransactionList({ transactions }){
     return (
         <div className={styles.walletinfo}>
-            <h2>Transaction History</h2> 
+            <h2 className={styles.font}>Transaction History</h2> 
             <ul>
                 {transactions.map((tx, index) => (
                     <li key={index}>{tx}</li>

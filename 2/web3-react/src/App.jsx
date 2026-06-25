@@ -4,15 +4,21 @@ import TransactionList from "./TransactionList.jsx";
 import WalletInfo from "./WalletInfo.jsx";
 import TransferCard from "./TransferCard.jsx";
 import styles from "./TransferCard.module.css";
+import Mut from "./assets/Mutumi.png";
 
 // 组件写法function name() {contents}大括号中写JavaScript
 function Header() {
   //return ()括号中直接写HTML  
   return (
-    <header>
-      <h1 className={styles.head}>My Web3 Dashboard</h1>
-      <p>Welcome to my Web3 dashboard page</p>
-    </header>
+    <div>
+      <header className={styles.header}>
+        <h1 className={styles.font}>My Web3 Dashboard</h1>
+        <img src={Mut} alt="Failed"></img>
+      </header>
+      <div>
+        <p>Welcome to my Web3 dashboard page</p>
+      </div>  
+    </div>
   );
 }
 
@@ -37,6 +43,8 @@ function App() {
       <section style={{ display: "flex", gap: "10px" }}>
         <TransferCard
           title="ETH Transfer"
+          Logo="https://cdn.crypto-logo.com/logos/ethereum-eth/128x128/transparent.png"
+          sim="ETH Image"
           balance={ethBalance}
           setBalance={se}
           unit="ETH"
@@ -44,6 +52,8 @@ function App() {
         />
         <TransferCard
           title="POL Transfer"
+          Logo="https://cryptologos.cc/logos/polygon-matic-logo.png"
+          sim="POL Image"
           balance={polBalance}
           setBalance={sp}
           unit="POL"

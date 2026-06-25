@@ -37,4 +37,4 @@
 > 2026.6.22
 ![dashboard](./Preview/3e7ee32eb5936d66dd5a4ca5cfe28312.png)
 > 2026.6.23
-![dashboard](./Preview/49a3b41c15e27e1df52ff4b4c873e13e.png)
+![dashboard](./Preview/51ba4c06909153f12d63011e814c8ba7.png)
