@@ -31,6 +31,10 @@ Record the process of learning Web3 front-end development from scratch, includin
 > 2026.6.23
 - .map()
 
+> 2026.6.29
+- Connect to Realistic Wallet
+- Interface optimizition
+
 ## Project Preview
 > 2026.6.17
 ![dashboard](./Preview/6adfd45338be9ca043bf8520ca055526.png)
@@ -38,3 +42,5 @@ Record the process of learning Web3 front-end development from scratch, includin
 ![dashboard](./Preview/3e7ee32eb5936d66dd5a4ca5cfe28312.png)
 > 2026.6.23
 ![dashboard](./Preview/51ba4c06909153f12d63011e814c8ba7.png)
+> 2026.6.29
+![dashboard](./Preview/f781741b1a2a884f145f0574427a8f0a.png)
