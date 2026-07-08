@@ -35,6 +35,10 @@ Record the process of learning Web3 front-end development from scratch, includin
 - Connect to Realistic Wallet
 - Interface optimizition
 
+> 2026.7.8
+- Transfer function
+- A Real DApp
+
 ## Project Preview
 > 2026.6.17
 ![dashboard](./Preview/6adfd45338be9ca043bf8520ca055526.png)
@@ -44,3 +48,5 @@ Record the process of learning Web3 front-end development from scratch, includin
 ![dashboard](./Preview/51ba4c06909153f12d63011e814c8ba7.png)
 > 2026.6.29
 ![dashboard](./Preview/f781741b1a2a884f145f0574427a8f0a.png)
+> 2026.7.8
+![dashboard](./Preview/c5a0909c4cb76ed788f2b9b1dd903268.png)

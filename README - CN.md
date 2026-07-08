@@ -35,6 +35,10 @@
 - 连接真实钱包
 - 优化界面
 
+> 2026.7.8
+- 转账功能
+- 一个真实可用的DApp
+
 ## 项目预览
 > 2026.6.17
 ![dashboard](./Preview/6adfd45338be9ca043bf8520ca055526.png)
@@ -44,3 +48,5 @@
 ![dashboard](./Preview/51ba4c06909153f12d63011e814c8ba7.png)
 > 2026.6.29
 ![dashboard](./Preview/f781741b1a2a884f145f0574427a8f0a.png)
+> 2026.7.8
+![dashboard](./Preview/c5a0909c4cb76ed788f2b9b1dd903268.png)
