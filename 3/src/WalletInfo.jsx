@@ -25,11 +25,13 @@ function WalletInfo({ address, ethbalance, polbalance, chainId, switchChain, isC
             )}
             {/* 切换网络 */}
             <div>
-                <p>Current Network: {chainId === 1 ? 'Ethereum' : chainId === 137 ? 'Polygon' : chainId}</p>
+                <p>Current Network: {chainId === 1 ? 'Ethereum' : chainId === 137 ? 'Polygon' : chainId === 11155111 ? 'Sepolia' : 'Unknown'}</p>
                 <button className={styles.button} onClick={() => switchChain({ chainId: 1 })}
                     disabled={chainId === 1}>Switch to ETH</button>
                 <button className={styles.button} onClick={() => switchChain({ chainId: 137 })}
                     disabled={chainId === 137}>Switch to POL</button>
+                <button className={styles.button} onClick={() => switchChain({ chainId: 11155111 })}
+                    disabled={chainId === 11155111}>Switch to Sepolia</button>
             </div>
         </div>
     );

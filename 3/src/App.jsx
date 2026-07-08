@@ -1,7 +1,8 @@
 // import其他组件
-import { useAccount, useConnect, useDisconnect, useBalance, useChainId, useSwitchChain } from 'wagmi';
+import { useAccount, useConnect, useDisconnect, useBalance, useChainId, useSwitchChain, } from 'wagmi';
 import { injected } from 'wagmi/connectors';
 import { useState } from "react";
+import SendEth from './SendETH.jsx';
 import TransactionList from "./TransactionList.jsx";
 import WalletInfo from "./WalletInfo.jsx";
 import TransferCard from "./TransferCard.jsx";
@@ -29,7 +30,7 @@ function App() {
   const chainId = useChainId()
   const { switchChain } = useSwitchChain()
   const { address, isConnected } = useAccount()
-  const { data: ethBalanceData } = useBalance({ address: address, })
+  const { data: ethBalanceData } = useBalance({ address: address, chainId: chainId, })
   const { data: polBalanceData } = useBalance({ address: address, chainId: 137, })
   const { connect } = useConnect()
   const { disconnect } = useDisconnect()
@@ -38,6 +39,7 @@ function App() {
   console.log('ethBalanceData:', ethBalanceData)
   console.log('polBalanceData:', polBalanceData)
   console.log('address:', address)
+  console.log('chainId:', chainId)
 
   function formatBalance(data) {
     if (!data) return '...'
@@ -83,6 +85,7 @@ function App() {
         />
       </section>
       {/* 记录 */}
+      <SendEth />
       <TransactionList transactions={transactions} />
     </div>
   );
