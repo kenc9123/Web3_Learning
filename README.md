@@ -1,18 +1,19 @@
 ## Web3 Learning Log ##
 
+English | [简体中文](./README-CN.md)
+
 # About this git
 
 Record the process of learning Web3 front-end development from scratch, including code exercises and study notes
 
 ## Learning Route
 
-> Phase 1: HTML + CSS + JavaScript basics
-
-> Phase 2: React Framework + Web3 Connection
-
-> Phase 3: Solidity Smart Contract
-
-> Phase 4: Real Project
+| Phase | Contents |
+| ----- | ------ |
+| Phase 1 | HTML + CSS + JavaScript basics |
+| Phase 2 | React Framework + Web3 Connection |
+| Phase 3 | Solidity Smart Contract |
+| Phase 4 | Real Project |
 
 ## Completed Contents
 
@@ -29,7 +30,7 @@ Record the process of learning Web3 front-end development from scratch, includin
 - Props, CSS Modules, 
 
 > 2026.6.23
-- .map()
+- array method like .map, find, filter
 
 > 2026.6.29
 - Connect to Realistic Wallet
